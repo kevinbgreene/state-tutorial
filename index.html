@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    #root {
+      overflow: hidden;
+    }
+
+    .application-header {
+      padding: 10px 5px;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .side-nav {
+      float: left;
+      width: 20%;
+    }
+
+    .main-content {
+      float: left;
+      width: 80%;
+    }
+
+    .folder-item {
+      padding: 10px 5px 10px 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .folder-item.active {
+      background: rgba(140,190,220,0.2);
+    }
+
+    .folder-item-title {
+      font-size: 12px;
+    }
+
+    .folder-item-desc {
+      font-size: 10px;
+      color: #999;
+    }
+
+    .folder-email-list {
+      display: none;
+    }
+
+    .folder-item.active .folder-email-list {
+      display: block;
+    }
+
+    .email-item {
+      padding: 10px 5px 10px 10px;
+    }
+
+    .email-item-title {
+      font-size: 11px;
+      color: #333;
+    }
+
+    .email-item-date {
+      color: #999;
+      font-size: 8px;
+    }
+
+    .email-item-from {
+      color: #555;
+      font-size: 10px;
+    }
+
+    .main-content {
+      padding: 15px;
+    }
+
+    .empty-email-message {
+      color: #555;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .email-title {
+      font-size: 14px;
+      margin: 0 0 10px 0;
+    }
+
+    .email-date {
+      font-size: 10px;
+      color: #999;
+    }
+
+    .email-body {
+      font-size: 12px;
+      line-height: 16px;
+      color: #777;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div id="root"></div>
+
+  <script src="dist/app.js"></script>
+
+</body>
+</html>
